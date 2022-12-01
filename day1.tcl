@@ -23,8 +23,8 @@ set max1 [lindex $newlist 0]
 # answer 1
 puts $max1
 #find 2nd highest value in list
-set max2 [lindex $newlist 0]
+set max2 [lindex $newlist 1]
 #find 3rd value in list
-set max3 [lindex $newlist 0]
+set max3 [lindex $newlist 2]
 # answer 2
 puts [expr $max1 + $max2 + $max3]
