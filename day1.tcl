@@ -18,7 +18,6 @@ foreach line $data {
 }
 # sort and find
 set newlist [lsort -integer -decreasing $list]
-puts $newlist
 #find highest value in list
 set max1 [lindex $newlist 0]
 # answer 1
