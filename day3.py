@@ -1,5 +1,3 @@
-import os
-
 def splitStringInHalf(stringToSplit):
     first, second = stringToSplit[:len(stringToSplit)//2], stringToSplit[len(stringToSplit)//2:]
     return {        'firstHalf': first,        'secondHalf': second,    }
