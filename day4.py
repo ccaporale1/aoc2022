@@ -1,8 +1,6 @@
 def process_pairs_contain(pair):
-    one = pair[0]
-    two = pair[1]
-    one_split = one.split('-')
-    two_split = two.split('-')
+    one_split = pair[0].split('-')
+    two_split = pair[1].split('-')
 
     if int(one_split[0]) <= int(two_split[0]) and int(one_split[1]) >= int(two_split[1]):
         return 1
@@ -12,10 +10,8 @@ def process_pairs_contain(pair):
         return 0
 
 def process_pairs_overlap(pair):
-    one = pair[0]
-    two = pair[1]
-    one_split = one.split('-')
-    two_split = two.split('-')
+    one_split = pair[0].split('-')
+    two_split = pair[1].split('-')
 
     if int(one_split[0]) <= int(two_split[0]) and int(one_split[1]) >= int(two_split[0]):
         return 1
@@ -38,4 +34,4 @@ for pair in pairs:
     split_pairs.append(pair.split(','))
 
 print('Part 1: ', sum(list(map(process_pairs_contain,split_pairs))))
-print('Part 1: ', sum(list(map(process_pairs_overlap,split_pairs))))
+print('Part 2: ', sum(list(map(process_pairs_overlap,split_pairs))))
