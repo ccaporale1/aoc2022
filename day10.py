@@ -3,7 +3,7 @@ verbose = True
 with open('./inputs/day10_input.txt') as f:
     data = f.read().split('\n')
 data_part2 = data.copy()
-print(data_part2)
+
 for line in range(0,len(data)):
     data[line] = data[line].split()
     if data[line][0] == 'noop':
