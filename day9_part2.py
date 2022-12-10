@@ -1,6 +1,6 @@
 import numpy
 
-with open('./day9_input.txt') as f:
+with open('./inputs/day9_input.txt') as f:
     data = f.readlines()
 
 
