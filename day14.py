@@ -98,7 +98,7 @@ def main():
     print('Part 1: ',part1(input[0],input[1]))  # 1072
 
     assert part2(test_input[0],test_input[1]) == 93
-    #print(f'Part 2 {part2(*input)}')  # 24659
+
     print('Part 2: ',part2(input[0],input[1]))  # 1072
 
 if __name__ == '__main__':
